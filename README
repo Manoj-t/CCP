@@ -1,0 +1,41 @@
+**Basic Credit Card Processing**
+
+This is a **Java project developed with the support of Maven** as a build automation tool to install/import any dependencies that are required. It implements Basic Credit Card Processing.
+
+
+**Overview of Design Process**
+
+- Divided this project into **three main** Java modules. They are **MainCCP.java**, **Helper.java** and **Record.java**
+- **MainCCP.java** acts as a gateway to the project as it has main method from where JVM starts execution. It has sorting and summary printing aspects of the project.
+- **Helper.java** contains all necessary methods such as provisioning for two types of input sources like **reading the input file**, processing each transaction like Adding new accounts, Validating card numbers against **Luhn 10 algorithm** and also process charges and credits against them.
+- **Record.java** acts as a temporary persistence module in **ArrayList**. Credit card numbers for whose Luhn algorithm fails will have **erroneous** status and others will be **active** status.
+
+**Reason for choosing Java as the programming language**
+
+- Aspects like **ArrayList manipulations, Sorting, File IO handling mechanisms** made me to choose Java. Although it can be done in Python and other languages the familiarity with these concepts in Java made me to chose it over other languages.
+
+**Required dependencies**
+
+Unit tests are written using **Junit4 and Mockito** frameworks. Therefore, these are the dependencies that are required to run test cases in this project.
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.10.19</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+
+**How to build and compile code**
+- Like stated earlier, this project is developed using Apache maven tool
+
+
+
+
+
