@@ -16,7 +16,8 @@ This is a **Java project developed with the support of Maven** as a build automa
 
 **Required dependencies**
 
-Unit tests are written using **Junit4 and Mockito** frameworks. Therefore, these are the dependencies that are required to run test cases in this project.
+- Maven is required to build and run this project. Download maven and add it's path to the environment variable.
+- Unit tests are written using **Junit4 and Mockito** frameworks. Therefore, these are the dependencies that are required to run test cases in this project.
 
         <dependency>
             <groupId>org.mockito</groupId>
@@ -33,7 +34,19 @@ Unit tests are written using **Junit4 and Mockito** frameworks. Therefore, these
         </dependency>
 
 **How to build and compile code**
-- Like stated earlier, this project is developed using Apache maven tool
+- Open the terminal/command prompt in a folder where project is located. After that, Run the command `mvn clean install --DskipTests=true`  to clean the target, compile, build and package the project.
+
+**How to run code and test cases**
+- This program will accept input from two sources:
+
+
+  **1.Filename passed as a command line argument**
+In the same terminal window, run the maven command `mvn exec:java -Dexec.mainClass="com.ccp.MainCCP"  -Dexec.args="input.txt"`. **input.txt** file is located in the root folder of this project (CCP/input.txt) and you can edit and pass your own values.
+It prints status of the accounts with names followed by balance in alphabetical order.  
+
+**2. Input read from STDIN**
+
+In the same terminal window, run the command  `mvn exec:java -Dexec.mainClass="com.ccp.MainCCP"`. Then the program prompts you to enter the input file (say **input.txt** and enter). It prints status of the accounts with names followed by balance in alphabetical order.
 
 
 

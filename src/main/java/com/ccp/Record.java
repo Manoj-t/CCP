@@ -69,6 +69,4 @@ public class Record {
     public String toString() {
         return "Record{" + "name=" + name + ", ccn=" + ccn + ", limit=" + limit + ", balance=" + balance + ", status=" + status + '}';
     }
-
-    
 }
