@@ -1,0 +1,8 @@
+Add Rachael 373090117991000 $2000
+Add Monica 349510987908579 $3000
+Add Phoebe 372875443948042 $2000
+Charge Rachael $500
+Charge Rachael $800
+Charge Monica $7
+Credit Monica $3000
+Credit Phoebe $200
